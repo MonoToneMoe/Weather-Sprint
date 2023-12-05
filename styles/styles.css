@@ -1,4 +1,82 @@
-.navbar {
-    background-color: #A5E9FF;
-    height: 100px;
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&display=swap');
+
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+    background-image: url("../assets/imgs/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100vh;
 }
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0) !important;
+    height: 100px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding-left: 0 !important;
+    font-family: 'Heebo', sans-serif !important;
+    overflow: hidden;
+}
+
+.navbar-brand {
+    font-size: 25px !important;
+    font-weight: bold !important;
+    color: white !important;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+}
+
+.search {
+    border-radius: 50px;
+    border: 2px solid black;
+    border-color: black;
+    background-color: #A5E9FF;
+    height: 60px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-input {
+    background:transparent;
+    border: 0 solid;
+    width: 90%;
+    height: 100%;
+    font-size: 25px;
+    
+}
+
+input:focus{
+    outline: none;
+}
+
+.header {
+    background-color: rgba(244, 232, 193, 0.7);
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.head-txt {
+    font-size: 100px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+}
+
+.body {
+    background-color: rgba(165, 233, 255, 0.5);
+    height: 390px;
+    display: flex;
+    align-items: center;
+}
+
+.body-container {
+    box-shadow: 0px 10px 10px 0px rgba(120, 155, 160, 0.20);
+    margin-top: 50px;
+}
+
