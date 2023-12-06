@@ -11,8 +11,8 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
+    <nav class="navbar bg-body-tertiary" style="overflow: hidden;">
+      <div class="container-fluid come-in">
         <a class="navbar-brand">
           <img class="logo" src="./assets/imgs/02d@2x.png" alt="Bootstrap" width="30" height="24">
           Weather Man Weather Guy
@@ -26,10 +26,13 @@
 
     <!-- focused weather -->
     <div class="container-fluid body-container">
-      <div class="row header">
-      <h1 class="head-txt">sdfljk</h1>
+      <div class="row header" style="height: 150px;">
+        <div style="display: flex; justify-content: space-between;">
+          <h1 class="head-txt" style="font-size: 100px;">City</h1>
+      <h1 class="head-txt" style="font-size: 100px;">Date</h1>
+        </div>
       </div>
-      <div class="row body">
+      <div class="row body" style="height: 390px;">
         <div class="col-6">
           <div class="row"></div>
           <div class="row">
@@ -38,8 +41,42 @@
             <div class="col"></div>
           </div>
         </div>
-        <div class="col-6">
-          <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+        <div class="col-6" style="background-color: rgba(255, 255, 255, 0.5); border: 2px black solid;">
+          <canvas id="myChart" style="width:100%;max-width:600px;"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 day forecast -->
+    <div class="container-fluid body-container" style="margin-bottom: 50px;">
+      <div class="row header" style="height: 75px;">
+        <h1 class="head-txt" style="font-size: 25px;">This Week's Weather</h1>
+      </div>
+      <div class="row body" style="height: 270px;">
+        <div class="col">
+          <div class="row forecast-card forecast-row"><img class="forecast-img" src="./assets/imgs/01d@2x.png" alt=""></div>
+          <div class="row forecast-row"><p class="forecast-card forecast-day">Mon</p></div>
+          <div class="row forecast-row"><p class="forecast-card forecast-temp">Min: Max:</p></div>
+        </div>
+        <div class="col">
+          <div class="row forecast-card forecast-row"><img class="forecast-img" src="./assets/imgs/01d@2x.png" alt=""></div>
+          <div class="row forecast-row"><p class="forecast-card forecast-day">Mon</p></div>
+          <div class="row forecast-row"><p class="forecast-card forecast-temp">Min: Max:</p></div>
+        </div>
+        <div class="col">
+          <div class="row forecast-card forecast-row"><img class="forecast-img" src="./assets/imgs/01d@2x.png" alt=""></div>
+          <div class="row forecast-row"><p class="forecast-card forecast-day">Mon</p></div>
+          <div class="row forecast-row"><p class="forecast-card forecast-temp">Min: Max:</p></div>
+        </div>
+        <div class="col">
+          <div class="row forecast-card forecast-row"><img class="forecast-img" src="./assets/imgs/01d@2x.png" alt=""></div>
+          <div class="row forecast-row"><p class="forecast-card forecast-day">Mon</p></div>
+          <div class="row forecast-row"><p class="forecast-card forecast-temp">Min: Max:</p></div>
+        </div>
+        <div class="col">
+          <div class="row forecast-card forecast-row"><img class="forecast-img" src="./assets/imgs/01d@2x.png" alt=""></div>
+          <div class="row forecast-row"><p class="forecast-card forecast-day">Mon</p></div>
+          <div class="row forecast-row"><p class="forecast-card forecast-temp">Min: Max:</p></div>
         </div>
       </div>
     </div>

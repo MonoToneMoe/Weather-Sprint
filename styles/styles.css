@@ -6,7 +6,19 @@ body {
     background-image: url("../assets/imgs/bg.jpg");
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 100% 100vh;
+    background-size: cover;
+    font-family: 'Heebo', sans-serif !important;
+    animation-name: fadein;
+    animation-duration: 600ms;
+    animation-delay: 300ms;
+    animation-timing-function: ease-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 .navbar {
@@ -16,7 +28,6 @@ body {
     justify-content: space-between !important;
     align-items: center !important;
     padding-left: 0 !important;
-    font-family: 'Heebo', sans-serif !important;
     overflow: hidden;
 }
 
@@ -57,26 +68,65 @@ input:focus{
 
 .header {
     background-color: rgba(244, 232, 193, 0.7);
-    height: 150px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .head-txt {
-    font-size: 100px;
-    font-family: 'Heebo', sans-serif;
     font-weight: bold;
 }
 
 .body {
     background-color: rgba(165, 233, 255, 0.5);
-    height: 390px;
     display: flex;
     align-items: center;
 }
 
 .body-container {
-    box-shadow: 0px 10px 10px 0px rgba(120, 155, 160, 0.20);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
     margin-top: 50px;
 }
 
+.forecast-img {
+    width: 100px;
+    padding: 0;
+}
+
+.forecast-day {
+    font-size: 25px;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+}
+
+.forecast-temp {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+.forecast-card {
+    display: flex;
+    justify-content: center;
+}
+
+.forecast-row {
+    margin-bottom: 25px;
+}
+
+.come-in {
+    position: absolute;
+    top: -100px;
+    animation-name: comeIn;
+    animation-duration: 500ms;
+    animation-delay: 300ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes comeIn {
+    from {top: -100px;}
+    to {top: 0px;}
+}
