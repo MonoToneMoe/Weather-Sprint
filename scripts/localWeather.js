@@ -7,6 +7,7 @@ function LocalWeather() {
         .then(data => {
             let localLat = data.location.latitude;
             let localLong = data.location.longitude;
-            return { localLat, localLong };
+            let localCity = data.city.name;
+            return { localLat, localLong, localCity };
         });
 }
